@@ -7,8 +7,7 @@ use std::path::Path;
 use std::simd::prelude::*;
 
 #[inline(always)]
-fn xor_simd<const LANES: usize>(data1: &[u8], data2: &[u8]) -> Vec<u8>
-{
+fn xor_simd<const LANES: usize>(data1: &[u8], data2: &[u8]) -> Vec<u8> {
     assert_eq!(
         data1.len(),
         data2.len(),
@@ -58,11 +57,7 @@ fn xor_scalar(data1: &[u8], data2: &[u8]) -> Vec<u8> {
         "Data slices must be of the same length."
     );
 
-    data1
-        .iter()
-        .zip(data2.iter())
-        .map(|(a, b)| a ^ b)
-        .collect()
+    data1.iter().zip(data2.iter()).map(|(a, b)| a ^ b).collect()
 }
 
 fn xor_dispatch(data1: &[u8], data2: &[u8]) -> Vec<u8> {

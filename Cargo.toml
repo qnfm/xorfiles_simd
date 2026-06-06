@@ -1,15 +1,15 @@
 [package]
-name = "xorfiles_avx2"
-version = "0.1.0"
+name = "xorfiles_simd"
+version = "0.1.1"
 edition = "2021"
 
 authors = ["qnfm <eirivihe@gmail.com>"]
 description = "A Rust cli for XOR file operations using AVX2 instructions."
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/qnfm/xorfiles_avx2"
-repository = "https://github.com/qnfm/xorfiles_avx2"
-keywords = ["xor", "cryptor", "avx2", "simd", "CLI"]
+homepage = "https://github.com/qnfm/xorfiles_simd"
+repository = "https://github.com/qnfm/xorfiles_simd"
+keywords = ["xor", "avx2", "avx512", "simd", "CLI"]
 categories = ["cryptography", "command-line-utilities"]
 
 [dependencies]
